@@ -1,10 +1,10 @@
 {
-  "name": "parse-address",
-  "version": "1.1.2",
-  "description": "US Street Address Parser",
+  "name": "parse-address-australia",
+  "version": "0.0.1",
+  "description": "AU Street Address Parser",
   "main": "address.js",
   "scripts": {
-    "test": "node test",
+    "test": "node test.js",
     "build": "./node_modules/browserify/bin/cmd.js address.js --standalone parseAddress | ./node_modules/.bin/uglifyjs  > parse-address.min.js"
   },
   "repository": {
@@ -17,11 +17,11 @@
     "parser",
     "address",
     "street",
-    "US",
-    "Geo::StreetAddress::US",
+    "AU",
+    "Geo::StreetAddress::AU",
     "geo"
   ],
-  "author": "hassansin <rezatxe@gmail.com> (https://github.com/hassansin)",
+  "author": "hassansin <rezatxe@gmail.com> (https://github.com/hassansin) && Jingtai Piao <piaojingtai@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hassansin/parse-address/issues"
