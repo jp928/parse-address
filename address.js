@@ -345,6 +345,7 @@
   parser.parseAddress = function(address){
     lazyInit();
     var parts = XRegExp.exec(address,Addr_Match.address);
+    console.log(parts);
     return parser.normalize_address(parts);
   };
   parser.parseInformalAddress = function(address){
@@ -387,22 +388,9 @@
     return parts;
   };
 
-  // // AMD / RequireJS
-  // if (typeof define !== 'undefined' && define.amd) {
-  //     define([], function () {
-  //         return parser;
-  //     });
-  // }
-  // // Node.js
-  // else if (typeof exports !== "undefined") {
   exports.parseIntersection = parser.parseIntersection;
   exports.parseLocation = parser.parseLocation;
   exports.parseInformalAddress = parser.parseInformalAddress;
   exports.parseAddress = parser.parseAddress;
-  // }
-  // // included directly via <script> tag
-  // else {
-  //     root.addressParser = root.addressParser || parser;
-  // }
 
 }());
