@@ -6,6 +6,8 @@ This is Node.js port for Perl [Geo::StreetAddress::US](http://search.cpan.org/~t
 
 >Geo::StreetAddress::Australia is a regex-based street address and street intersection parser for the Australia. Its basic goal is to be as forgiving as possible when parsing user-provided address strings. Geo::StreetAddress::Australia knows about directional prefixes and suffixes, fractional building numbers, building units, 4 digits postcodes, and all of the official USPS abbreviations for street types and state names...
 
+# Notice: This library is for nodejs only
+
 ## Usage:
 
 ```javascript
