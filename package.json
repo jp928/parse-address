@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/hassansin/parse-address",
   "dependencies": {
-    "xregexp": "^3.1.1"
+    "xregexp": "^4.3.0"
   }
 }

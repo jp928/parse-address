@@ -49,6 +49,14 @@ var address = {
     state: 'NSW',
     street: 'Sussex',
     type: 'St'
+  },
+  '2 Hampden Street, North Sydney, NSW 2060 ': {
+    city: 'North Sydney',
+    number: '2',
+    postcode: '2060',
+    state: 'NSW',
+    street: 'Hampden',
+    type: 'Street'
   }
 };
 
