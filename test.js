@@ -50,13 +50,32 @@ var address = {
     street: 'Sussex',
     type: 'St'
   },
-  '2 Hampden Street, North Sydney, NSW 2060 ': {
+  '2 Hampden Street, North Sydney, NSW 2060': {
     city: 'North Sydney',
     number: '2',
     postcode: '2060',
     state: 'NSW',
     street: 'Hampden',
-    type: 'Street'
+    type: 'St'
+  },
+  'Lot 72 Libercal St Sydney NSW 2000': {
+    city: 'Sydney',
+    postcode: '2000',
+    sec_unit_num: '72',
+    sec_unit_type: 'Lot',
+    state: 'NSW',
+    street: 'Libercal',
+    type: 'St'
+  },
+  '405/2 Marlborough Street, Drummoyne NSW 2047': {
+    city: 'Drummoyne',
+    number: '2',
+    postcode: '2047',
+    sec_unit_num: '405',
+    sec_unit_type: 'unit',
+    state: 'NSW',
+    street: 'Marlborough',
+    type: 'St'
   }
 };
 

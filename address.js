@@ -325,8 +325,14 @@ parser.normalize_address = function(parts){
   });
 
   ['type', 'type1', 'type2'].forEach(function(key){
-    if(key in parsed)
+    // use short street type
+    if (Object.keys(Street_Type).indexOf(parsed[key]) > 0) {
+      parsed[key] = Street_Type[parsed[key]];
+    }
+
+    if(key in parsed) {
       parsed[key] = parsed[key].charAt(0).toUpperCase() + parsed[key].slice(1).toLowerCase();
+    }
   });
 
   if(parsed.city){
