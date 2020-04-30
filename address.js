@@ -226,6 +226,7 @@ function lazyInit(){
       |slip                                         \n\
       |spa?ce?                                      \n\
       |stop                                         \n\
+      |le?ve?l?                                     \n\
       |tra?i?le?r                                   \n\
       |box)(?![a-z]                                 \n\
     )                                               \n\

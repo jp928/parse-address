@@ -27,9 +27,32 @@ var address = {
   },
   'Level 4/ 235 Macquarie St Sydney NSW 2000': {
     city: 'Sydney',
+    number: '235',
     postcode: '2000',
+    sec_unit_num: '4',
+    sec_unit_type: 'Level',
     state: 'NSW',
-    street: 'Level 4 235 Macquarie',
+    street: 'Macquarie',
+    type: 'St'
+  },
+  'lv 5/235 Macquarie St Sydney NSW 2000': {
+    city: 'Sydney',
+    number: '235',
+    postcode: '2000',
+    sec_unit_num: '5',
+    sec_unit_type: 'lv',
+    state: 'NSW',
+    street: 'Macquarie',
+    type: 'St'
+  },
+  'Lv 6 235 Macquarie St Sydney NSW 2000': {
+    city: 'Sydney',
+    number: '235',
+    postcode: '2000',
+    sec_unit_num: '6',
+    sec_unit_type: 'Lv',
+    state: 'NSW',
+    street: 'Macquarie',
     type: 'St'
   },
   '20/180-90 Phillip St Sydney NSW 2000': {

@@ -1,6 +1,6 @@
 {
   "name": "parse-address-australia",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "AU Street Address Parser",
   "main": "address.js",
   "scripts": {
