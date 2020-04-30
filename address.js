@@ -344,12 +344,13 @@
 
   parser.parseAddress = function(address){
     lazyInit();
+
     var parts = XRegExp.exec(address,Addr_Match.address);
-    console.log(parts);
     return parser.normalize_address(parts);
   };
   parser.parseInformalAddress = function(address){
     lazyInit();
+
     var parts = XRegExp.exec(address,Addr_Match.informal_address);
     return parser.normalize_address(parts);
   }; 
@@ -360,12 +361,11 @@
   };
   parser.parseLocation = function(address){
     lazyInit();
-    if (XRegExp(Addr_Match.corner,'xi').test(address)) {
-        return parser.parseIntersection(address);
+
+    if (address.match(/^(\s+)?\d+\/\d+.(\D)/)) {
+      address = `unit ${address}`;
     }
-    if (XRegExp('^'+Addr_Match.po_box,'xi').test(address)){
-      return parser.parsePoAddress(address);
-    }
+
     return parser.parseAddress(address)
         || parser.parseInformalAddress(address);
   };
